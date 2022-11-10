@@ -1,0 +1,33 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.max-width
+{
+    background-image: url("./bg.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.left #myCanvas
+{
+    background: #fff;
+    width: 20%;
+    border-radius: 10px;
+    margin-left:30rem;
+    margin-top: 32rem;
+    
+}
+
+
+.right
+{
+    background: #fff;
+    width: 30%;
+    margin-left: 57rem;
+    margin-top: -18rem;
+}

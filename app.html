@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiring</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js"></script>
+</head>
+<body>
+    <div class="max-width">
+        <div class="left">
+            <canvas id="myCanvas" width="200" height="100">
+            </canvas>
+        </div>
+        <div class="right">
+            <h2>Apply Here</h2>
+            <form action="" method="post">
+                <fieldset>
+                <label for="">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+                <br>
+
+                <label for="">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+                <br>
+
+                <label for="">Phone Number</label>
+                <input type="number" name="number" id="number" placeholder="Enter your phone number">
+                <br>
+                <label for="">Enter Date and time</label>
+                <input type="datetime-local" name="datetime" id="datetime" />
+                <br>
+                PLease upload your resume<input type="file" id="image"  width="48" height="48">
+                <br>
+                </fieldset>
+            </form>
+                Enter Geolocation
+                <button onclick="getLocation()">Try It</button><br>
+                <p id="demo"></p>
+                <script>
+                    var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+                </script>
+                <br>
+                <label for="">Enquire</label>
+                <textarea name="enquire" id="" cols="30" rows="5" placeholder="Enter any enquiry"></textarea>
+                
+                <br><br>
+                <input type="submit" value="Submit">
+                </fieldset>
+        </div>
+    </div>
+</body>
+</html>
