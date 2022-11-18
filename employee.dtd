@@ -1,7 +1,6 @@
-
-<!ELEMENT Employee_Records (Employee,fname,mname,lname,street,area,city,state,phone)>
-<!ELEMENT Employee (#PCDATA)>
-<!ATTLIST Employee Id CDATA #Required>
+<!ELEMENT Employee_Records (Employee*)>
+<!ELEMENT Employee (fname,mname,lname,street,area,city,state,phone)>
+<!ATTLIST Employee id CDATA #REQUIRED>
 <!ELEMENT fname (#PCDATA)>
 <!ELEMENT mname EMPTY>
 <!ELEMENT lname (#PCDATA)>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Employee_Records SYSTEM "employee.dtd">
+<Employee_Records>
+  <Employee id="1234">
+    <fname>Jacob</fname>
+    <mname></mname>
+    <lname>Ryan</lname>
+    <street>13th Street</street>
+    <area>Cooper Square</area>
+    <city>New York City</city>
+    <state>New York</state>
+    <phone>9875461237</phone>
+  </Employee>
+
+  <Employee id="1235">
+    <fname>Simon</fname>
+    <mname></mname>
+    <lname>Riley</lname>
+    <street>Grand Avenue</street>
+    <area>Sunset Park</area>
+    <city>San Marcos</city>
+    <state>California</state>
+    <phone>9214578963</phone>
+  </Employee>
+  <Employee id="1236">
+    <fname>Aaron</fname>
+    <mname></mname>
+    <lname>Smith</lname>
+    <street>Styuvesant Avenue</street>
+    <area>Saraghina Pizzeria</area>
+    <city>New York City</city>
+    <state>New York</state>
+    <phone>9875879437</phone>
+  </Employee>
+  <Employee id="1237">
+    <fname>Cirras</fname>
+    <mname></mname>
+    <lname>Ray</lname>
+    <street>Cooper Drive</street>
+    <area>Beverly Oaks</area>
+    <city>Irving</city>
+    <state>Texas</state>
+    <phone>9872314569</phone>
+  </Employee>
+  <Employee id="1238">
+    <fname>Lorraine</fname>
+    <mname></mname>
+    <lname>Hugo</lname>
+    <street>Hulen Street</street>
+    <area>Cultural District</area>
+    <city>Fort Worth</city>
+    <state>Texas</state>
+    <phone>9978412563</phone>
+  </Employee>
+</Employee_Records>
