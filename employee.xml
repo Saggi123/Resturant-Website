@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Employee_Records SYSTEM "employee.dtd">
+<?xml-stylesheet href="employee.xsl" type="text/xsl"?>
 <Employee_Records>
   <Employee id="1234">
     <fname>Jacob</fname>
