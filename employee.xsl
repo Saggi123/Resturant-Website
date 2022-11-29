@@ -18,9 +18,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <th style="text-align:left">State</th>
       <th style="text-align:left">Phone_Number</th>
     </tr>
-      <xsl:for-each select="cakeshop_customer_management/customer">
+      <xsl:for-each select="Employee_Records/Employee">
         <tr>
-        <td><xsl:value-of select="id"/></td>
+        <td><xsl:value-of select="@id"/></td>
          <td><xsl:value-of select="fname"/></td>
          <td><xsl:value-of select="mname"/></td>
          <td><xsl:value-of select="lname"/></td>
