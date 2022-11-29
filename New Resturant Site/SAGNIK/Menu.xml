@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Menucard SYSTEM "Menu.dtd">
+<?xml-model href="Menu.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-stylesheet href="Menu.xsl" type="text/xsl"?>
+<Menucard>
+    <Items>
+        <id>Non Veg</id>
+        <name>Egg hakka Chowmein</name>
+        <halfprice> Rs/- 60</halfprice>
+        <fullprice>Rs/-100</fullprice>
+    </Items>
+    <Items >
+        <id>Non-Veg</id>
+        <name>Chicken Hakka Chowmein</name>
+        <halfprice>Rs/-80</halfprice>
+        <fullprice>Rs/- 120</fullprice>
+    </Items>
+    <Items >
+        <id>Non Veg</id>
+        <name>Chicken Fried Rice</name>
+        <halfprice>Rs/- 80</halfprice>
+        <fullprice>Rs/- 130</fullprice>
+    </Items>
+    <Items >
+        <id>Non Veg</id>
+        <name> Veg Fried Rice</name>
+        <halfprice>Rs/- 70</halfprice>
+        <fullprice>Rs/- 110</fullprice>
+    </Items>
+    <Items >
+        <id>Veg</id>
+        <name>Veg Hakka Chowmein</name>
+        <halfprice> Rs/-60</halfprice>
+        <fullprice>Rs/- 100</fullprice>
+    </Items>
+    <Items >
+        <id>Non Veg</id>
+        <name> Chilli Chicken</name>
+        <halfprice>Rs/- 100</halfprice>
+        <fullprice>Rs/- 200</fullprice>
+    </Items>
+    <Items>
+        <id>Non Veg</id>
+        <name>Chicken Manchurian</name>
+        <halfprice>Rs/- 90</halfprice>
+        <fullprice>Rs/- 180</fullprice>
+    </Items>
+     <Items >
+        <id>Veg</id>
+        <name>Gobi Manchurian</name>
+        <halfprice>Rs/- 60</halfprice>
+        <fullprice>Rs/-110</fullprice>
+    </Items>
+</Menucard>

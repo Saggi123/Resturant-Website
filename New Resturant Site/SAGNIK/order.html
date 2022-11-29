@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="orderstyle.css"> 
+    <title>Book with us</title>
+</head>
+<body>
+ <header>
+    <div class="navbar">
+        <img src="5528439.jpg" alt="Logo">
+        <span>Hot and Spicy Chinese Resturant</span>
+        <a href="About us .html" title="ABout the resturant">About Us</a>
+        &nbsp;
+        <a href="Menu.html" title="Menucard">Menu</a>
+        &nbsp;
+        <a href="Book.html" title="Contact the resturant">Book With us</a>
+    </div>
+ </header>   
+ <section>
+    <h1>Enjoy a Fine Dine at Hot and Spicy</h1>
+    <form method="post" action="respose.html">
+        <fieldset>
+            <legend>Please Enter the Details of Your Booking</legend><br>
+            Name <select name="Name">
+                <option value="M">MR</option>
+                <option value="F">Ms</option>
+                <option value="FM">Mrs</option>
+            </select>
+            <input type="text" id="Name" placeholder="Your name please" style="width:200px"><br>
+         <br>Email id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="email" id="mail" placeholder="Your email id please" style="width: 200px">
+         <br><br>
+         Date and Time Of booking &nbsp;<input type="datetime-local" id="datetime">
+        <br><br> No of people to book for &nbsp;&nbsp; 
+        1 <input type="radio" name="radio1" value="1">
+        2 <input type="radio" name="radio1" value="2">
+        3 <input type="radio" name="radio1" value="3">
+        4<input type="radio" name="radio1" value="4">
+        <br><br>
+        Your Preferred Menu chooice &nbsp;&nbsp;
+        Veg <input type="checkbox" name="checkbox1" value="check1">&nbsp;
+        Non_Veg<input type="Checkbox" name="checkbox2" value="check2">
+        Continental<input type="checkbox" name="checkbox3" value="check3">
+        <br><br>
+        Your id proof Please <input type="file" name="file" id="file1">
+        <br><br> 
+        Any Further Suggestions <textarea rows="10" cols="30" Placeholder="Your Suggestions"></textarea>
+        <br><br><input type="submit" value="Submit" style="background-color: #f6b319; width:60px">
+        <input type="reset" value="Reset" style="background-color:red; width: 60px;">
+    </fieldset>
+
+    </form>
+ </section>
+</body>
+</html>

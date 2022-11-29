@@ -1,0 +1,6 @@
+<!ELEMENT Menucard (Items*)>
+<!ELEMENT Items (id,name,halfprice,fullprice)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT halfprice (#PCDATA)>
+<!ELEMENT fullprice (#PCDATA)>

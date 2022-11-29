@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #61122f;
+}
+.navbar{
+    height: 60px;
+    background-color: #f6b319;
+}
+.navbar img{
+    border-radius: 50%;
+    height:50px;
+    width:55px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.navbar span{
+    position: relative;
+    color:#61122f;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    left:30px;
+    bottom:30%;
+}
+.navbar a{
+    position: relative;
+    color: #61122f;
+    left:45%;
+    bottom:30%;
+    font-weight: 900;
+    font-size: 18px;
+    text-decoration: none;
+}
+.navbar a:hover,a:active{
+    color: red;
+}
+section h1{
+    text-align: center;
+    color: #f6b319;
+    padding-top: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 34px;
+
+}
+section form{
+    width:60%;
+    margin: auto;
+    text-align: center;
+    color: antiquewhite;
+    padding-top: 20px;
+}
