@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+        }
+        td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 15px;
+            color: beige;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        th{
+            color: #f6b319;
+            padding: 15px;
+            border: 2px solid black;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        body{
+            background-color: #61122f;
+        }
+    </style>
+    <button type="button" onclick="loadXMLDOC()">Get my Cd collection</button>
+    <br><br>
+    <table id="demo"></table>
+  <script>
+    function loadXMLDOC() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            myfunction(this);
+        }
+    };
+    xmlhttp.open("GET", "Menu.xml", true);
+    xmlhttp.send();
+}
+    function myfunction(xml) {
+    var table="<tr><th>ID</th><th>Name</th><th>Half Price</th><th>Full Price</tr>";        
+    var i;
+    var xmlDoc = xml.responseXML;
+    var x = xmlDoc.getElementsByTagName("Items");
+    for(i=0; i <x.length; i++){
+        table += "<tr id=row"+i+"><td >" +
+            x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue +
+            "</td><td>" + 
+                x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+                "</td><td>"+
+                    x[i].getElementsByTagName("halfprice")[0].childNodes[0].nodeValue +
+                    "</td><td>"+
+                        x[i].getElementsByTagName("fullprice")[0].childNodes[0].nodeValue +
+                        "</td><td><button type=button name=Remove id="+i+" onclick=remove(id)>Remove Records</button</td></tr>";    
+        }
+        document.getElementById("demo").innerHTML=table;
+}
+function remove(id) {
+document.getElementById("row"+i).remove();
+    
+}
+
+</script>  
+</body>
+</html>
