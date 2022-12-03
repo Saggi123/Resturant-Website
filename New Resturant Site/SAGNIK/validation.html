@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Your Details</title>
+    <style>
+        body{
+            background-color:#61122f ;
+        }
+        form{
+            width: 80%;
+        }
+        #el1{
+            color: white;
+            font-size: 34px;
+            font-weight: bolder;
+            margin: auto;
+        }
+        label{
+            color: azure;
+            font-size: larger;
+        }
+        
+    </style>
+</head>
+<body>
+<form action="response.html" name="form1" method="post" target="_self" onsubmit="validate()"></form>
+<fieldset>
+    <legend id="el1">Enter Your Details</legend>
+    <label for="username">User Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" id="username" name="username">
+    <br><br>
+    <label for="phone">Phone-Number</label>
+    <input type="tel" id="phone" name="phone">
+    <br><br>
+    <label for="password">Your Password</label>&nbsp;
+    <input type="password" id="password" name="password">
+    <br><br>
+    <label for="mail">Your Gmail</label>
+    <input type="email" name="email" id="email"><br><br>
+    <input type="submit" value="Submit" onclick="validate()">
+</fieldset>
+</form>
+<script>
+    function validate() 
+    {
+        let x=document.getElementById("username").value;
+        let x1=document.getElementById("phone").value;
+        let x2=document.getElementById("password").value;
+        let x3=document.getElementById("email").value;
+        var count,array1;
+        const userpattern = /^[a-zA-z]+$/;
+        const userpattern1=/^[9|8|7|6]\d{9}/;
+        const userpattern2=/[a-z]+/;
+        const userpattern3=/[A-Z]+/;
+        const userpattern4=/\d+/;
+        const userpattern5=/[-._!"`'#%&,:;<>=@{}~\$\(\)\*\+\/\\\?\[\]\^\|]+/;
+        const userpattern6=/^\w+([\.-_]?\w)*@\w+([\.])([in]|[com])+$/
+        var array1=x2.match(userpattern5);
+        if(!userpattern.test(x))
+        {
+            window.alert("Please Enter Coreect user Name");
+            return false;
+        }
+        
+       else if(!userpattern1.test(x1))
+        {
+         window.alert("Please Enter a phone number of 10 digits only and a valid one");
+            return false;
+        }
+        else if(!userpattern2.test(x2))
+        {
+            window.alert("Password must have atleast 1 lowercase character");
+             return false;
+        }
+        else if(!userpattern3.test(x2))
+        {
+            window.alert("Password must have atleast 1 uppercase character");
+             return false;
+        }
+        else if(!userpattern4.test(x2))
+        {
+            window.alert("Password must have atleast 1 digit");
+             return false;
+        }
+       else if(x2.match(userpattern5)==null )
+        {
+            window.alert("Password Must contain special characters");
+            return false;
+      }
+      else if(!userpattern6.test(x2))
+      {
+        window.alert("Enter valid email");
+        return false;
+      }
+     /** else if(x2.match(userpattern5)!=null )
+      {
+        while ((array1 = userpattern5.exec(x2)) !== null) {
+        count++;
+        }
+        if(count!=1)
+        {
+            window.alert("Password must contain only one special character");
+            return false;
+        }
+      }**/
+        
+        else
+        {
+            return true;
+        }
+        
+    }
+</script>
+</body>
+</html>
