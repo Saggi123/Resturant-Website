@@ -40,6 +40,10 @@
     <br><br>
     <label for="mail">Your Gmail</label>
     <input type="email" name="email" id="email"><br><br>
+    <label for="address">Your Address</label>
+    <textarea rows="10" cols="30" id="address" name="address"></textarea><br><br>
+    <label for="Guardian">Your Guardian's Name</label>
+    <input type="text" id="guardian" name="guardian"><br><br>
     <input type="submit" value="Submit" onclick="validate()">
 </fieldset>
 </form>
@@ -50,6 +54,8 @@
         let x1=document.getElementById("phone").value;
         let x2=document.getElementById("password").value;
         let x3=document.getElementById("email").value;
+        let x4=document.getElementById("address").value;
+        let x5=document.getElementById("guardian").value;
         var count,array1;
         const userpattern = /^[a-zA-z]+$/;
         const userpattern1=/^[9|8|7|6]\d{9}/;
@@ -57,7 +63,9 @@
         const userpattern3=/[A-Z]+/;
         const userpattern4=/\d+/;
         const userpattern5=/[-._!"`'#%&,:;<>=@{}~\$\(\)\*\+\/\\\?\[\]\^\|]+/;
-        const userpattern6=/^\w+([\.-_]?\w)*@\w+([\.])([in]|[com])+$/
+        const userpattern6=/^\w+([\.-_]?\w)*@\w+([\.])([in]|[com])+$/;
+        const userpattern7=/^[a-zA-z 0-9\.\-_]+$/;
+        const userpattern8=/^M[r|rs|s]+\s{1}[A-z]{1}[a-z]+\s{1}[A-Z]{1}[a-z]+/; 
         var array1=x2.match(userpattern5);
         if(!userpattern.test(x))
         {
@@ -90,9 +98,19 @@
             window.alert("Password Must contain special characters");
             return false;
       }
-      else if(!userpattern6.test(x2))
+      else if(!userpattern6.test(x3))
       {
         window.alert("Enter valid email");
+        return false;
+      }
+      else if(!userpattern7.test(x4))
+      {
+        window.alert("Enter a valid Adress");
+        return false;
+      }
+      else if(!userpattern8.test(x5))
+      {
+        window.alert("Enter a valid Guardian Name");
         return false;
       }
      /** else if(x2.match(userpattern5)!=null )
